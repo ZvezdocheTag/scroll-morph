@@ -19,7 +19,7 @@ var generateHEX = function() {
 }
 
 var borderCount = function(e, el) {
-  var max = el.scrollHeight - window.innerHeight  ;
+  var max = el.scrollHeight - window.innerHeight  - 70;
   var result = (e/max * 100) / 2;
   return result;
 }
