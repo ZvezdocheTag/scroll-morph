@@ -19,7 +19,12 @@ var generateHEX = function() {
 }
 // -50
 var borderCount = function(e, el) {
-  var max = el.scrollHeight - window.innerHeight - 50 ;
+  var userAgent = window.navigator.userAgent;
+  var scrollBottom = 17;
+  if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
+   scrollBottom = -50;
+  }
+  var max = el.scrollHeight - window.innerHeight + scrollBottom ;
   var result = (e/max * 100) / 2;
   return result;
 }
