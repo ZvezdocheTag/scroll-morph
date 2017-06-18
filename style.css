@@ -1,0 +1,36 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+}
+.scrollable {
+    height: 100%;
+    overflow: scroll;
+    width: 100%;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.scrollable::-webkit-scrollbar { 
+    display: none; 
+}
+.inbox {
+    height: 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.box {
+    position: absolute;
+    margin-top: 100px;
+    top: 0px;
+    left: 50%;
+    margin-left: -50px;
+    border:50px solid tomato;
+    width: 0px;
+    height: 0px;
+    transform: rotate(45deg);
+    transform-origin: 50% 50%;
+    transition:  all 1.4s ease, top 0s ease 0s;
+}
