@@ -12,14 +12,14 @@
 var generateHEX = function() {
     var arr = [];
     while(arr.length < 3) {
-      arr.push(colorRandomizer())
+      arr.push(colorRandomizer().toString(16))
     }
 
-    return arr.length === 3 ? 'rgba(' + arr.join(',') + ',1)' : '#000000' ;
+    return '#' + arr.join('') ;
 }
 
 var borderCount = function(e, el) {
-  var max = el.scrollHeight - window.innerHeight + 17 ;
+  var max = el.scrollHeight - window.innerHeight + 50 ;
   var result = (e/max * 100) / 2;
   return result;
 }
