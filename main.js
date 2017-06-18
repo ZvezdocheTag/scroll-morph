@@ -15,11 +15,11 @@ var generateHEX = function() {
       arr.push(colorRandomizer().toString(16))
     }
 
-    return '#' + arr.join('') ;
+    return arr.length === 3 ? '#' + arr.join('') : '#000000' ;
 }
-
+// -50
 var borderCount = function(e, el) {
-  var max = el.scrollHeight - window.innerHeight  - 70;
+  var max = el.scrollHeight - window.innerHeight + 17 ;
   var result = (e/max * 100) / 2;
   return result;
 }
