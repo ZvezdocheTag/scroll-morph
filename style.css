@@ -32,5 +32,5 @@ body {
     height: 0px;
     transform: rotate(45deg);
     transform-origin: 50% 50%;
-    transition:  all 1s ease,border-radius .05s ease, top 0s ease 0s;
+    transition:  border-color 1s ease;
 }
