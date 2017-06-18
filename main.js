@@ -32,9 +32,10 @@ var borderCount = function(e, el) {
 scrollable.addEventListener('scroll', function(e) {
   var _this = this;
   var current = _this.scrollTop;
+  var top = current*1.55;
 
 //   box.style.top = "translateY(" + current + "px)rotate(45deg)" ;
-  box.style.top =  current + "px" ;
+  box.style.top =  top + "px" ;
   box.style.borderColor = generateHEX();
   box.style.borderRadius = borderCount(current, _this) + '%'
 })

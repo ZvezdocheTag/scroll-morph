@@ -22,7 +22,7 @@ body {
 }
 
 .box {
-    position: fixed;
+    position: absolute;
     margin-top: 50px;
     top: 0px;
     left: 50%;
@@ -32,5 +32,5 @@ body {
     height: 0px;
     transform: rotate(45deg);
     transform-origin: 50% 50%;
-    transition:  all 1.4s ease, top 0s ease 0s;
+    transition:  all .7s ease, top 0s ease 0s;
 }
